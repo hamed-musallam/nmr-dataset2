@@ -2,7 +2,7 @@ const { readFileSync, readdirSync, writeFileSync } = require('fs');
 const { join } = require('path');
 
 const URL_FOLDER = '.';
-const DATA_FOLDER = 'gh_pages';
+const DATA_FOLDER = 'docs';
 const DATA_DIR = join(__dirname, DATA_FOLDER);
 
 const dirs = readdirSync(DATA_DIR).filter((dir) => dir.match(/^[0-9-]*$/));
